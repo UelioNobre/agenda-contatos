@@ -1,15 +1,17 @@
-# Criando Dockerfiles
+# Agenda de contato
 
-Repositório de estudos para configuração simples de uma aplicação contendo:
+Aplicação simples de agenda de contato com HTML e Javascript.
 
-  - Aplicação Front-end
-  - Aplicação API Back-end
-  - Banco de dados
+## Docker
 
-## Próximos passos 
+### Criar imagem
 
-Adicionar mais uma camada de aplicação Back-end, para ficar com a seguinte estrutura:
-  - Aplicação Front-end
-  - Aplicação Back-end
-  - API
-  - Banco de dados
+```bash
+docker build -t frontend .  
+```
+
+
+### Executar Imagem
+```sh
+docker run --name container-fullstack -p 3000:80 frontend
+```
